@@ -1,0 +1,18 @@
+<%- include('./partials/head') %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto mt-3 card">
+            <form class="card-body" action="/form" method="POST">
+                <label for="name" class="lead">Nombre</label>
+                <input type="text" name="name" id="name"class="form-control" placeholder="Nombre">
+                <label for="email" class="lead">Correo Electrónico</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Correo Electronico">
+                <label for="message" class="lead">Mensaje</label>
+                <textarea name="message" id="message" class="form-control border"></textarea>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include('./partials/footer') %>
